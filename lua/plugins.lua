@@ -40,8 +40,11 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
 	use "preservim/nerdtree"	-- easy way to navigate 						
-  use 'vim-airline/vim-airline' -- status tab-line for nvim
-  use {
+	use{'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }			
+  } -- beauty status bar made with lua
+
+	use {
 				'nvim-telescope/telescope.nvim', tag = '0.1.0',
 				-- or                            , branch = '0.1.x',
 				requires = { {'nvim-lua/plenary.nvim'} }
@@ -51,11 +54,27 @@ return packer.startup(function(use)
 	--coc
 	use {'neoclide/coc.nvim', branch = 'release'}
  
-
-	--togleterm
+  --TERMINAL--
+  --togleterm
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
        end}
+  
+
+  -- appearance
+  --Floaterm
+	use 'voldikss/vim-floaterm'
+  --ident lines 
+	use "lukas-reineke/indent-blankline.nvim"
+  --devicons
+	use 'ryanoasis/vim-devicons'
+  -- buffer lines
+	-- using packer.nvim
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+
+
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

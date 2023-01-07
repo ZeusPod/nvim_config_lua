@@ -17,7 +17,16 @@ vim.keymap.set('n', '<leader>nc', '<cmd>:NERDTreeClose<cr>')
 -- ToggleTerm open
 vim.keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<cr>')
 -- ToggleTermToggleAll to close
-vim.keymap.set('n', '<leader>ta', '<cmd>:ToggleTermToggleAll<cr>')
+vim.keymap.set('n', '<leader>tc', '<cmd>:ToggleTermToggleAll<cr>')
+
+
+-- Floaterm keymaps
+vim.keymap.set('n', '<leader>,', '<cmd>:FloatermNew<cr>')
+vim.keymap.set('n', '<leader>,,','<cmd>:FloatermToggle<cr>')
+
+--Bufferline keymaps
+vim.keymap.set('n', '<leader>ll','<cmd>:BufferLineCyclePrev<cr>')
+vim.keymap.set('n','<leader>rr','<cmd>:BufferLineCycleNext<cr>')
 
 --Telescope
 local builtin = require('telescope.builtin')
