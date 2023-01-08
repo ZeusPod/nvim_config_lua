@@ -13,8 +13,9 @@
 --]]
 
 
-require('basic')
 require('settings')
 require('keymaps')
 require('plugins')
 require("toggleterm").setup{}
+require('bufferline-config')
+require('lualine-config')

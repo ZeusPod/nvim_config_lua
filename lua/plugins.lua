@@ -59,7 +59,9 @@ return packer.startup(function(use)
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
        end}
-  
+
+  -- fugitive awesome git integrations		 
+  use 'tpope/vim-fugitive' 
 
   -- appearance
   --Floaterm
@@ -71,9 +73,6 @@ return packer.startup(function(use)
   -- buffer lines
 	-- using packer.nvim
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-
-
-
 
 
   -- Automatically set up your configuration after cloning packer.nvim
