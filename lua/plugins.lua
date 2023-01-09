@@ -38,7 +38,6 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
 	use "preservim/nerdtree"	-- easy way to navigate 						
 	use{'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }			
@@ -73,8 +72,14 @@ return packer.startup(function(use)
   -- buffer lines
 	-- using packer.nvim
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  
+	--Themes
+	--kanagawa
+  use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
+  --nigthfox
+	use "EdenEast/nightfox.nvim" -- great theme for nvim
 
-
+	--
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

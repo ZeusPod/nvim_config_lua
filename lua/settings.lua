@@ -22,5 +22,6 @@ vim.opt.breakindent = true
 vim.opt.tabstop = 2
 vim.opt.expandtab = false
 
-vim.cmd("colorscheme kanagawa")
+--theme 
+vim.cmd("colorscheme nordfox")
 
