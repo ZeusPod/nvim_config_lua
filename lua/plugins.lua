@@ -56,12 +56,18 @@ return packer.startup(function(use)
   --TERMINAL--
   --togleterm
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-  require("toggleterm").setup()
+  require("toggleterm").setup{current_line_blame = true}
        end}
-
+  -- Git integrations
   -- fugitive awesome git integrations		 
   use 'tpope/vim-fugitive' 
-
+	use {'lewis6991/gitsigns.nvim',
+				config = function()
+				require('gitsigns').setup{current_line_blame=true}
+  end
+	}
+	--
+  --
   -- appearance
   --Floaterm
 	use 'voldikss/vim-floaterm'

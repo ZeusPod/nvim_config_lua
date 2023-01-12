@@ -6,6 +6,8 @@ lista1 = [1,8,9,2,3,5,10]
 #imprime la lista1 en orden inverso
 print(lista1[::-1])
 
+print('')
+
 
 #imprime la lista1 desde la posicion 3 en adelante
 print(lista1[3::])
