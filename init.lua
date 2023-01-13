@@ -19,4 +19,4 @@ require('plugins')
 require("toggleterm").setup{}
 require('bufferline-config')
 require('lualine-config')
-
+require('treesitter-config')

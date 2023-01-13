@@ -42,7 +42,11 @@ return packer.startup(function(use)
 	use{'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }			
   } -- beauty status bar made with lua
+  
+  -- Sintax
+  use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
 
+  -- Telescope
 	use {
 				'nvim-telescope/telescope.nvim', tag = '0.1.0',
 				-- or                            , branch = '0.1.x',
@@ -69,7 +73,7 @@ return packer.startup(function(use)
 	--
   --
   -- appearance
-  --Floaterm
+  --Floaterm 
 	use 'voldikss/vim-floaterm'
   --ident lines 
 	use "lukas-reineke/indent-blankline.nvim"
