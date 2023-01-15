@@ -44,6 +44,10 @@ return packer.startup(function(use)
   } -- beauty status bar made with lua
   
   -- Sintax
+	--emmet
+	use {'mattn/emmet-vim'}
+	--
+	--treesitter
   use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
 
   -- Telescope
@@ -88,7 +92,7 @@ return packer.startup(function(use)
   use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
   --nigthfox
 	use "EdenEast/nightfox.nvim" -- great theme for nvim
-
+	
 	--
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

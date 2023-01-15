@@ -22,6 +22,10 @@ vim.opt.breakindent = true
 vim.opt.tabstop = 2
 vim.opt.expandtab = false
 
+--show hiden files 
+vim.g.NERDTreeShowHidden = 1
+
+
 --theme 
 vim.cmd("colorscheme nordfox")
 
