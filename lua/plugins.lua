@@ -57,10 +57,15 @@ return packer.startup(function(use)
 				requires = { {'nvim-lua/plenary.nvim'} }
        } -- awesome and fast file finder  
    
-
+  -- autocomplete
 	--coc
 	use {'neoclide/coc.nvim', branch = 'release'}
  
+  -- copilot alternative
+	--use 'Exafunction/codeium.vim'
+
+
+
   --TERMINAL--
   --togleterm
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
