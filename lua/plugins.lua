@@ -68,12 +68,27 @@ return packer.startup(function(use)
 
   --TERMINAL--
   --togleterm
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-  require("toggleterm").setup{current_line_blame = true}
-       end}
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup{
+					current_line_blame = true,
+				  open_mapping = [[<c-\>]],
+					size =10,
+					shading_factor = 2,
+				  direction = "float",
+				  float_opts = {
+          border = "curved",
+          highlights = {
+          border = "Normal",
+          background = "Normal",
+       },
+     },
+	}
+  end}
   -- Git integrations
   -- fugitive awesome git integrations		 
-  use 'tpope/vim-fugitive' 
+  -- floaterm
+
+	use 'tpope/vim-fugitive' 
 	use {'lewis6991/gitsigns.nvim',
 				config = function()
 				require('gitsigns').setup{current_line_blame=true}
