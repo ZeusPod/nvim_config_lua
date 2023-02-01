@@ -43,12 +43,16 @@ return packer.startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }			
   } -- beauty status bar made with lua
   
+  
+
   -- Sintax
 	--emmet
 	use {'mattn/emmet-vim'}
 	--
 	--treesitter
   use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
+  
+  -- files manage
 
   -- Telescope
 	use {
