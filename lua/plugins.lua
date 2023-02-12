@@ -111,6 +111,20 @@ return packer.startup(function(use)
 	-- using packer.nvim
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   
+
+	use 'nvim-tree/nvim-web-devicons'
+
+  use {
+  'glepnir/dashboard-nvim',
+  event = 'VimEnter',
+  config = function()
+    require('dashboard').setup {
+      -- config
+    }
+  end,
+  requires = {'nvim-tree/nvim-web-devicons'}
+  }
+
 	--Themes
 	--kanagawa
   use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
