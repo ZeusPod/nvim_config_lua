@@ -20,3 +20,4 @@ require("toggleterm").setup{}
 require('bufferline-config')
 require('lualine-config')
 require('treesitter-config')
+require('dashboard-config')

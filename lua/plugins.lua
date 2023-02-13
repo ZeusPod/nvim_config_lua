@@ -113,19 +113,13 @@ return packer.startup(function(use)
   
 
 	use 'nvim-tree/nvim-web-devicons'
+  use 'glepnir/dashboard-nvim'
 
-  use {
-  'glepnir/dashboard-nvim',
-  event = 'VimEnter',
-  config = function()
-    require('dashboard').setup {
-      -- config
-    }
-  end,
-  requires = {'nvim-tree/nvim-web-devicons'}
-  }
 
-	--Themes
+	
+
+    
+  --Themes
 	--kanagawa
   use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
   --nigthfox
