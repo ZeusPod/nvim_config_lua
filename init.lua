@@ -21,8 +21,5 @@ require('bufferline-config')
 require('lualine-config')
 require('treesitter-config')
 require('dashboard-config')
-<<<<<<< HEAD
 require('comments-config')
-=======
 require("nvim-treesitter.install").prefer_git = true
->>>>>>> 354ba462730c329b7da5f14deddf16a6f3cf769b
