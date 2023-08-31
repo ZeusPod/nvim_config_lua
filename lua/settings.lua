@@ -27,5 +27,5 @@ vim.g.NERDTreeShowHidden = 1
 
 
 --theme 
-vim.cmd("colorscheme nordfox")
+vim.cmd("colorscheme kanagawa-dragon")
 

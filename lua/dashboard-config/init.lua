@@ -23,9 +23,9 @@ db.setup({
 		}, --your header
     center = {
       {
-        icon = '🗎',
+        icon = '🗎 ',
         icon_hl = 'Title',
-        desc = 'Find File',
+        desc = ' Find File',
         desc_hl = 'String',
         key = 'ff',
         keymap = 'SPC f f',
@@ -42,20 +42,20 @@ db.setup({
       },
 			{
 				icon = '🔍',
-				desc = 'NerdTree',
+				desc = ' NerdTree',
 				key = 'n',
 				keymap = 'SPC n'
       },
 			{
 				icon = '🗎',
-				desc = 'New File',
-				action = 'nvim',
-				shortcut = 'Leader n f'
+				desc = ' New File',
+				action = 'tabnew',
+				shortcut = 'Leader nf'
 			},
 
     },
     footer = {
-      'simple es mejor que complejo'
+      'Simple es mejor que complejo'
 		}  --your footer
   }
 })

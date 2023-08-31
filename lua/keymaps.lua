@@ -20,6 +20,9 @@ vim.keymap.set('n', '<leader>tt', '<cmd>:ToggleTerm<cr>')
 vim.keymap.set('n', '<leader>tc', '<cmd>:ToggleTermToggleAll<cr>')
 
 
+-- new file 
+vim.keymap.set('n','<leader>nf', '<cmd>:new')
+
 -- Floaterm keymaps
 --vim.keymap.set('n', '<leader>tt', '<cmd>:FloatermNew<cr>')
 --vim.keymap.set('n', '<leader>tc','<cmd>:FloatermToggle<cr>')
@@ -35,6 +38,9 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+
+-- nvim comments
+vim.keymap.set('n', '<leader>cm','<cmd>:CommentToggle<cr>')
 
 --coc config
 -- Some servers have issues with backup files, see #649

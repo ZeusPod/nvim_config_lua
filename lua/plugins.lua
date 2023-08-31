@@ -114,14 +114,16 @@ return packer.startup(function(use)
 
 	use 'nvim-tree/nvim-web-devicons'
   use 'glepnir/dashboard-nvim'
+  
 
-
+	-- comments 
+	use "terrortylor/nvim-comment"
 	
 
     
   --Themes
 	--kanagawa
-  use "rebelot/kanagawa.nvim" -- beutiful theme for nvim
+	use "rebelot/kanagawa.nvim"
   --nigthfox
 	use "EdenEast/nightfox.nvim" -- great theme for nvim
 	

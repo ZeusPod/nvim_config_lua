@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
@@ -156,7 +161,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\23current_line_blame\2\tsize\3\n\14direction\nfloat\19shading_factor\3\2\17open_mapping\n<c-\\>\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\tsize\3\n\14direction\nfloat\19shading_factor\3\2\17open_mapping\n<c-\\>\23current_line_blame\2\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -181,7 +186,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\23current_line_blame\2\tsize\3\n\14direction\nfloat\19shading_factor\3\2\17open_mapping\n<c-\\>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+try_loadstring("\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\tsize\3\n\14direction\nfloat\19shading_factor\3\2\17open_mapping\n<c-\\>\23current_line_blame\2\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
