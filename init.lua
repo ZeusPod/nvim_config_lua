@@ -22,4 +22,5 @@ require('lualine-config')
 require('treesitter-config')
 require('dashboard-config')
 require('comments-config')
+require('lsp_config')
 require("nvim-treesitter.install").prefer_git = true

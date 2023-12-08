@@ -48,6 +48,17 @@ return packer.startup(function(use)
   -- Sintax
 	--emmet
 	use {'mattn/emmet-vim'}
+
+
+  use {
+    "williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+   }
+	    
+
+
+
 	--
 	--treesitter
   use {'nvim-treesitter/nvim-treesitter', run='TSUpdate'}
