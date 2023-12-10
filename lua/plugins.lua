@@ -55,7 +55,9 @@ return packer.startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
    }
-	    
+	  
+  -- multiline selection 
+	use 'mg979/vim-visual-multi'
 
 
 

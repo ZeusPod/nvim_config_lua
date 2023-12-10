@@ -176,7 +176,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\19shading_factor\3\2\17open_mapping\n<c-\\>\23current_line_blame\2\tsize\3\n\14direction\nfloat\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\vborder\vNormal\15background\vNormal\1\0\1\vborder\vcurved\1\0\5\14direction\nfloat\19shading_factor\3\2\tsize\3\n\17open_mapping\n<c-\\>\23current_line_blame\2\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -195,6 +195,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "C:\\Users\\josse\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   }
 }
 
@@ -205,7 +210,7 @@ try_loadstring("\27LJ\2\nQ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B
 time([[Config for gitsigns.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\15background\vNormal\vborder\vNormal\1\0\1\vborder\vcurved\1\0\5\19shading_factor\3\2\17open_mapping\n<c-\\>\23current_line_blame\2\tsize\3\n\14direction\nfloat\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+try_loadstring("\27LJ\2\nè\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\3=\3\a\2B\0\2\1K\0\1\0\15float_opts\15highlights\1\0\2\vborder\vNormal\15background\vNormal\1\0\1\vborder\vcurved\1\0\5\14direction\nfloat\19shading_factor\3\2\tsize\3\n\17open_mapping\n<c-\\>\23current_line_blame\2\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
