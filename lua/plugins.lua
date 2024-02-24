@@ -140,6 +140,9 @@ return packer.startup(function(use)
   --nigthfox
 	use "EdenEast/nightfox.nvim" -- great theme for nvim
 	
+  -- nord-vim
+	use 'arcticicestudio/nord-vim'
+
 	--
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
