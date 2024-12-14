@@ -69,7 +69,7 @@ return packer.startup(function(use)
 
   -- Telescope
 	use {
-				'nvim-telescope/telescope.nvim', tag = '0.1.0',
+				'nvim-telescope/telescope.nvim', tag = '0.1.8',
 				-- or                            , branch = '0.1.x',
 				requires = { {'nvim-lua/plenary.nvim'} }
        } -- awesome and fast file finder  
@@ -81,7 +81,18 @@ return packer.startup(function(use)
   -- copilot alternative
 	--use 'Exafunction/codeium.vim'
 
-
+  -- autocomplete
+	-- Remove the `use` here if you're using folke/lazy.nvim.
+   use {
+    'Exafunction/codeium.vim',
+    config = function ()
+    -- Change '<C-g>' here to any keycode you like.
+    vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+    end
+   }
 
   --TERMINAL--
   --togleterm
@@ -111,6 +122,9 @@ return packer.startup(function(use)
 				require('gitsigns').setup{current_line_blame=true}
   end
 	}
+
+  -- code runner 
+	use 'CRAG666/code_runner.nvim'
 	--
   --
   -- appearance

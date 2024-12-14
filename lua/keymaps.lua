@@ -21,7 +21,7 @@ vim.keymap.set('n', '<leader>tc', '<cmd>:ToggleTermToggleAll<cr>')
 
 
 -- new file 
-vim.keymap.set('n','<leader>nf', '<cmd>:new')
+vim.keymap.set('n','<leader>nf', '<cmd>:new<cr>')
 
 -- Floaterm keymaps
 --vim.keymap.set('n', '<leader>tt', '<cmd>:FloatermNew<cr>')
